@@ -35,7 +35,7 @@
 /* Showcase */
 .showcase-container {
   width: 100%;
-  height: 825px;
+  height: 826px;
   background: #141424;
   background: radial-gradient(
     circle,
@@ -108,7 +108,12 @@
   gap: 100px;
 }
 
-.clients-item > img:nth-child(4) {
+.clients-item > img:nth-child(2) {
+  display: none;
+}
+
+
+.clients-item > img:nth-child(5) {
   display: none;
 }
 
@@ -241,6 +246,7 @@
   display: flex;
   align-items: center;
   gap: 34px;
+  border: 1px solid rgba(0, 0, 0, 0.20)
 }
 
 .service-item > .service-item-img {
@@ -252,6 +258,11 @@
     border-radius: 100%;
     border: 1px solid #795AFF;
     align-content: center;
+}
+
+.service-item > .service-item-img > img {
+  width: 45px;
+  height: 36px;
 }
 
 .service-item > .service-item-text > h4 {

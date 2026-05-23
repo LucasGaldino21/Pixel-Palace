@@ -25,11 +25,19 @@
     display: inline;
   }
 
-  .clients-item > img:nth-child(3) {
+  .clients-item > img:nth-child(1) {
     display: none;
   }
 
+  .clients-item > img:nth-child(2) {
+    display: inline;
+  }
+
   .clients-item > img:nth-child(4) {
+    display: none;
+  }
+
+  .clients-item > img:nth-child(5) {
     display: inline;
   }
 
@@ -49,11 +57,11 @@
 }
 
 @media (max-width: 1760px) {
-    .works-container {
-        padding-inline: 20px;
-    }
+  .works-container {
+    padding-inline: 20px;
+  }
 
-    .works-img {
+  .works-img {
     overflow-x: scroll;
     justify-content: flex-start;
   }
@@ -63,15 +71,228 @@
     flex: 0 0 auto;
     scroll-snap-align: start;
   }
-
 }
 
 @media (max-width: 1130px) {
-    .navbar-content {
-        justify-content: center;
-    }
+  .navbar-content {
+    justify-content: center;
+  }
 
-    .navbar-content > ul > li{
-        display: none;
-    }
+  .navbar-content > ul > li {
+    display: none;
+  }
+
+  .showcase-container {
+    height: 100%;
+  }
+
+  .showcase-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 74px;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-bottom: 71px;
+  }
+
+  .showcase-text > button {
+    font-size: 1.875rem;
+  }
+
+  .showcase-content > img {
+    height: 508px;
+    width: 468px;
+    margin-bottom: 74px;
+  }
+
+  .clients-content {
+    gap: 10px
+  }
+
+  .clients-item {
+    gap: 50px;
+  }
+
+  
+
+
+
+
+
+
+
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 140px;
+  }
+
+  .about-content > img {
+    max-width: 838px;
+    max-height: 521px;
+  }
+
+  .about-content > .about-text > h3 {
+    font-size: 3.125rem;
+  }
+
+  .about-content > .about-text > p {
+    max-width: 748px;
+    font-size: 1.875rem;
+    line-height: 2.625rem;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-container .section-content:nth-child(2) {
+    order: 2;
+  }
+
+  .section-container .section-content:nth-child(3) {
+    order: 1;
+  }
+
+  .about-order-img {
+    order: 1;
+  } 
+
+  .about-order-text {
+    order: 2;
+  }
+
+  .about-text > p {
+    margin-inline: auto
+  }
+
+
+
+
+
+  .qualities-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    margin-bottom: 140px;
+  }
+
+  .qualities-content {
+    margin: 0;
+    max-width: 840px;
+    max-height: 720px;
+  }
+
+  .qualities-container > .qualities-content > .qualities-img {
+    width: 195px;
+    height: 188px;
+    margin-bottom: 61px;
+  }
+
+  .qualities-container > .qualities-content > .qualities-title {
+    font-size: 3.125rem;
+  }
+
+  .qualities-container > .qualities-content > .qualities-text {
+    font-size: 1.875rem;
+    max-width: 605px;
+    line-height: 2.625rem;
+  }
+
+
+
+
+
+  .services-text > h2 {
+    font-size: 3.438rem;
+    margin-bottom: 46px;
+  }
+
+  .services-text > p {
+    margin-bottom: 112px;
+    font-size: 1.875rem;
+    line-height: 2.625rem;
+  }
+
+  .services-items {
+    grid-template-columns: 1fr;
+    margin-inline: 0;
+    gap: 71px;
+  }
+
+  .service-item {
+    padding-inline: 100px;
+    border-radius: 0;
+    gap: 90px;
+  }
+
+  .service-item > .service-item-text > h4 {
+    font-size: 2.813rem;
+  }
+
+  .service-item > .service-item-text > p {
+    font-size: 1.875rem;
+    line-height: 2.625rem;
+  }
+
+  .service-item > .service-item-img {
+    width: 210px;
+    height: 210px;
+    padding-inline: 62px;
+    padding-block: 68px;
+  }
+
+  .service-item > .service-item-img > img {
+    width: 91px;
+    height: 73px;
+  }
+
+
+  .works-container > .works-text > h2 {
+    font-size: 3.438rem;
+  }
+
+  .works-container > .works-text > p {
+    font-size: 1.875rem;
+    line-height: 2.625rem;
+  }
+
+
+
+  .form-content > .form-title {
+    font-size: 3.438rem;
+  }
+
+  .form-content > .contact-form > .form-input {
+    font-size: 1.875rem;
+  }
+
+  .form-content > .contact-form > .form-button {
+    font-size: 1.875rem;
+  }
+
+
+
+  .footer-content{
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .footer-text > p {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-content > img {
+    max-width: 329px;
+    max-height: 217px;
+  }
+
+  .services-items {
+  }
 }
